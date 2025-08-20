@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Choudary | Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Moving background components -->
+    <div class="bg-animate" style="top:10%;left:5%;width:60px;height:60px;background:#90caf9;border-radius:50%;"></div>
+    <div class="bg-animate" style="top:70%;left:80%;width:40px;height:40px;background:#1976d2;border-radius:50%;animation-delay:2s;"></div>
+    <div class="bg-animate" style="top:40%;left:50%;width:30px;height:30px;background:#0d47a1;border-radius:50%;animation-delay:4s;"></div>
+    <div class="bg-animate" style="top:80%;left:20%;width:50px;height:50px;background:#00bcd4;border-radius:50%;animation-delay:1s;"></div>
+    <main>
+        <header>
+            Abhay Choudary
+        </header>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Scroll down to explore my work, skills, and contact information. The theme is blackish blue, with attractive animations and a modern layout.</p>
+            <img src="/static/profile.jpg" alt="Profile Photo" class="project-img" style="max-width:180px;">
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div>
+                <img src="/static/project1.jpg" alt="Project 1" class="project-img">
+                <h3>Project Title 1</h3>
+                <p>Short description of project 1. You can add more images and details here.</p>
+            </div>
+            <div>
+                <img src="/static/project2.jpg" alt="Project 2" class="project-img">
+                <h3>Project Title 2</h3>
+                <p>Short description of project 2. You can add more images and details here.</p>
+            </div>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, I'm Abhay Choudary, a passionate developer. This portfolio is designed and developed by me using Flask, HTML, and CSS. Feel free to connect!</p>
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form class="contact-form" method="POST" action="/contact">
+                <div class="form-row">
+                    <div style="flex:1;">
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+                    <div style="flex:1;">
+                        <input type="text" id="mobile" name="mobile" required placeholder="Mobile No">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div style="flex:1;">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div style="flex:1;">
+                        <input type="text" id="subject" name="subject" required placeholder="Subject">
+                    </div>
+                </div>
+                <textarea id="message" name="message" required placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Design & Developed by <a href="https://github.com/abhaychoudary" class="footer-link" target="_blank">Abhay Choudary</a>
+    </footer>
+</body>
+</html>
